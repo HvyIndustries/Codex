@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -173,6 +174,20 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Codex.Models\Codex.Models.csproj">
+      <Project>{0a778788-8786-435c-957a-0088026e1658}</Project>
+      <Name>Codex.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Codex.Persistence\Codex.Persistence.csproj">
+      <Project>{e98966b0-33c9-4aab-a88d-a6dd114c6153}</Project>
+      <Name>Codex.Persistence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Codex.Security\Codex.Security.csproj">
+      <Project>{aea142a9-29c6-4029-acc5-ab7895d618e2}</Project>
+      <Name>Codex.Security</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
